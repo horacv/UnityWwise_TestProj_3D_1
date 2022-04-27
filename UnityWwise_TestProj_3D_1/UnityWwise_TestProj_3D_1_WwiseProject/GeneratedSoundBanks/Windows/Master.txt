@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	928036824	Play_TestAudio			\Default Work Unit\Play_TestAudio	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3671138082	New_Game_Parameter			\Default Work Unit\New_Game_Parameter	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	429953229	TestAudio	Y:\Desktop\Game Audio Test Projects\UnityWwise_TestProj_3D_1\UnityWwise_TestProj_3D_1\UnityWwise_TestProj_3D_1_WwiseProject\.cache\Windows\SFX\MC_Melody_Loop_90_C_22_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		1881668
+

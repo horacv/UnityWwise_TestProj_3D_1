@@ -9,6 +9,52 @@
 							<ObjectRef Name="System" ID="{6BA7D12A-9705-415D-BCD1-E352EB7BD3F2}" WorkUnitID="{D6176DE9-2BF8-43D4-B7B9-31AA47A9A859}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Ambisonics 1" ID="{54E4663F-34FE-4984-B9AC-41FAEF681A6C}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect3">
+									<Custom>
+										<Effect Name="Resonance Audio Renderer (Custom)" ID="{0B3F638B-AAC3-4A44-B23F-B1CDB669EB92}" ShortID="426944590" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AuxBus Name="New_Auxiliary_Bus" ID="{2BDA74E8-5A2A-45BF-BF21-CD54DC2407D1}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>521</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Test" ID="{111839D8-6DED-47D6-B1A0-E09824741CF1}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

@@ -1,5 +1,13 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	385879778	Ambisonics 1			\Default Work Unit\Master Audio Bus\Ambisonics 1	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	373392551	New_Auxiliary_Bus			\Default Work Unit\Master Audio Bus\Ambisonics 1\New_Auxiliary_Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	426944590	Resonance Audio Renderer (Custom)	Resonance Audio Renderer			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

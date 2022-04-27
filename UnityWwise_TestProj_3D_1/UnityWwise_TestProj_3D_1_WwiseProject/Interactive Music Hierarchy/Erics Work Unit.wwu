@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{99327CFD-2F5D-4FEB-B11B-EF6431D5DD2A}" SchemaVersion="103">
+	<InteractiveMusic>
+		<WorkUnit Name="Erics Work Unit" ID="{99327CFD-2F5D-4FEB-B11B-EF6431D5DD2A}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="MusicPlaylist1_01" ID="{F7D83BB0-CA1C-402F-B839-0A16D13AD09D}" ShortID="277459141">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Tempo" Type="Real64" Value="100"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{44A220F1-03AA-483F-A86D-98DD0DC86CA6}" ShortID="486896892">
+									<PropertyList>
+										<Property Name="ConeInnerAngle" Type="int32" Value="75"/>
+										<Property Name="ConeLowPassFilterValue" Type="int32">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeOuterAngle" Type="int32" Value="235"/>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{73345B51-52D4-4A35-B80F-FECDCA437145}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="LowPassFilter" ID="{C7A517C9-A847-4062-BE83-DDECB9E9F38A}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>2700</XPos>
+															<YPos>65</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>80</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Spread" ID="{24CB5BE7-D981-4C3C-8F70-1917AB019901}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>2475</XPos>
+															<YPos>66.92708</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>68.69565</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82A746BE-8171-4C92-BEE7-B66C86F70B23}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="MuscicCue1" ID="{760BE27A-269D-4A55-BC58-1D5110833332}" ShortID="347111121">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="9750"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82A746BE-8171-4C92-BEE7-B66C86F70B23}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{F0FE2E4B-B9EA-4C3C-90FF-67BCC66E8C80}" ShortID="518183822">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{6DFADF92-C533-4B12-9143-77B9D961E391}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Music Loop 1 [C Major 100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="616408834"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{DDD66AB5-9599-44C7-9335-C7A9FD63E56E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8854373E-9D7D-4258-A9E5-DFA77A008592}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{F1D42F7F-4095-4BF6-BBAA-EB81ED70B915}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9600"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{6DFADF92-C533-4B12-9143-77B9D961E391}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{3076D74E-E8CF-4A6A-B7EC-778660BDDE33}" ShortID="26482899">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{9DE229B6-36FC-4183-81E7-43A7D9AF3DB3}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Music Loop 6 [C Major 100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="470773057"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{F6D1C071-4E93-4268-8594-D9BD3C4FB613}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{6BD5F466-C5A6-47EF-AF71-07D09D6A104A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{21FD89D0-28FD-42AE-81B5-50BE88A2D7ED}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9600"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{9DE229B6-36FC-4183-81E7-43A7D9AF3DB3}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="AWKN - Organic Loop 4 [100 BPM]" ID="{A5CB5AB5-0018-44F0-B001-BFF555D7BC70}" ShortID="1060921566">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Organic Loop 4 [100 BPM]" ID="{471D4AEC-9850-4B2A-8C81-30244B85B314}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Organic Loop 4 [100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="416283010"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{A5D0A81E-FA7E-414A-B9CC-0C1FEBCE84C4}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8ABACB3C-1479-40A1-956C-6ADAAF5CF4EE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Organic Loop 4 [100 BPM]" ID="{6DBFCB6D-7B45-4164-AC2D-CA1482F10A27}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9600"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Organic Loop 4 [100 BPM]" ID="{471D4AEC-9850-4B2A-8C81-30244B85B314}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="AWKN - Live Loop 5 [100 BPM]" ID="{AAF0FF32-1399-44E4-B8E5-4590589D4EAF}" ShortID="284667195">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Live Loop 5 [100 BPM]" ID="{FEE0F293-D9EF-4B98-B717-CF16EF08F83E}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Live Loop 5 [100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="603641893"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{6698B0E7-2741-4140-AAF2-5E31FC93A88F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{CE9D540E-EEA9-452C-A086-41776B9990E2}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Live Loop 5 [100 BPM]" ID="{89A23187-7BD1-4E04-9ECE-9279DBAC902A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9625"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Live Loop 5 [100 BPM]" ID="{FEE0F293-D9EF-4B98-B717-CF16EF08F83E}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{0AB4735F-A9EF-4C2B-9E32-53643B0B85BD}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.625</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{F157B34F-BA1B-4206-B0A8-B6B3B9258FD1}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.625</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{980136D2-9AB1-402C-8B9D-936F432E5DBD}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.625</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{27B8964A-B678-45BE-8589-CFF847995E65}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{DDD8BD60-85C9-4B7D-B82E-ABB3B500102E}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="9565.16104228122"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{4388015A-3AE5-440E-A5F5-4654A0A9CD34}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="1.25455201782643E-14"/>
+								<Property Name="PanY" Type="Real64" Value="-4.4596300398445E-16"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{30CD6105-E0FE-4D47-BD50-A89086866CD0}"/>
+					</PositioningInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{16578358-D638-4C8C-8189-1C10ABBD0840}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{53045E1C-F2B2-47E0-BA5D-357D61DCD70B}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{D8D3799D-BFB6-466F-A6F2-C760B7B29270}" ShortID="691013220">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{B7869193-D7B9-4E75-B08D-767CBD77F122}" ShortID="70322987">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="MuscicCue1" ID="{760BE27A-269D-4A55-BC58-1D5110833332}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="MusicPlaylist2_01" ID="{A1269AE3-AD92-49F8-A80F-0D90A80C535D}" ShortID="19573701">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Tempo" Type="Real64" Value="100"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{C8ECE329-E87E-46F4-B7C6-E3D457F5EC93}" ShortID="404803336">
+									<PropertyList>
+										<Property Name="ConeInnerAngle" Type="int32" Value="75"/>
+										<Property Name="ConeLowPassFilterValue" Type="int32">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ConeOuterAngle" Type="int32" Value="235"/>
+										<Property Name="ConeUse" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{DB518A66-3AAD-477B-9D64-74B187F2450A}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="LowPassFilter" ID="{3B63C44F-F909-403D-935D-7B76067135CE}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>2700</XPos>
+															<YPos>65</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>80</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Spread" ID="{0367E83B-639C-4B5A-B071-584152410FDF}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>2475</XPos>
+															<YPos>66.92708</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>4500</XPos>
+															<YPos>68.69565</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82A746BE-8171-4C92-BEE7-B66C86F70B23}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="MuscicCue1" ID="{F9EF39A6-33F5-4122-81D6-F1C0A319E250}" ShortID="698457891">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="9750"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{82A746BE-8171-4C92-BEE7-B66C86F70B23}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{BDA2FBA4-FAB0-4010-996C-42AB0F22B82B}" ShortID="293726079">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{13D72483-F66D-41F0-B5E3-5FC3CE6D0F1C}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Music Loop 1 [C Major 100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="616408834"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{9A19040C-0417-4A85-8180-64E26BEF9437}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3F39DACF-5E35-4145-A80C-2FAECB9B46BA}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{9294E020-199B-4F4D-8CF7-3756E888F316}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9600"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Music Loop 1 [C Major 100 BPM]" ID="{13D72483-F66D-41F0-B5E3-5FC3CE6D0F1C}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{90F1209F-07EE-4999-8897-033A7D2CE315}" ShortID="250153924">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{AC924BE6-C94C-4024-8324-04C9A8C809D6}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Music Loop 6 [C Major 100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="470773057"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2618DAEE-DC92-4BF3-AF9D-EA37B1D3BC2E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{645647C5-99DF-4D83-ABEE-E1B292F674FC}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{F87C7160-E7D3-4C5C-94D8-C6476D334013}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9600"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Music Loop 6 [C Major 100 BPM]" ID="{AC924BE6-C94C-4024-8324-04C9A8C809D6}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="AWKN - Organic Loop 4 [100 BPM]" ID="{2FB977BB-F125-4507-B1D2-F865A2D7E1EC}" ShortID="261557928">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Organic Loop 4 [100 BPM]" ID="{C1C40855-E276-4EB5-AC29-9781EFC9C726}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Organic Loop 4 [100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="416283010"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D28D18F5-0B7D-4A9A-8AEE-8E96406F6EF9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1A793FC9-8EDF-4C25-8047-44DACE9B77B0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Organic Loop 4 [100 BPM]" ID="{DDE97C66-A751-4E9A-AF74-229D5F90C4D6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9600"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Organic Loop 4 [100 BPM]" ID="{C1C40855-E276-4EB5-AC29-9781EFC9C726}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="AWKN - Live Loop 5 [100 BPM]" ID="{414F0264-06CB-43DD-AC57-4588F1847C34}" ShortID="167379621">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C65EF7-AEF7-4328-80B1-730F84472552}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AWKN - Live Loop 5 [100 BPM]" ID="{2AF4DC47-584B-4FF4-ABFC-32F0B6355026}">
+											<Language>SFX</Language>
+											<AudioFile>Music\AWKN - Live Loop 5 [100 BPM].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="603641893"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{42423499-6D34-4FFC-8FC3-971357EE5CBE}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C10B58F7-97C4-42B5-AD07-356F604515FF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="AWKN - Live Loop 5 [100 BPM]" ID="{6B2F12CA-1A0D-4A52-888B-DA5197A1994D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="9625"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="AWKN - Live Loop 5 [100 BPM]" ID="{2AF4DC47-584B-4FF4-ABFC-32F0B6355026}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{35807700-5EFF-4453-9917-E9D77B317C11}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.625</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{CFE6B77E-5BEE-443D-9373-31B1EE7FB85B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.625</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{616FF3CC-682D-4E9D-BD9F-FDEDF6D0EF7C}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.625</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{4537C351-81EF-4E4E-95A1-7C23E94FB250}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{F1C61CEE-9C9B-4069-BA14-9F71ADB5C075}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="9565.16104228122"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{C3A61084-DF65-4174-A9F3-CCE7DDAD20EA}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="1.25455201782643E-14"/>
+								<Property Name="PanY" Type="Real64" Value="-4.4596300398445E-16"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{4A140E13-D99B-47D0-A4E0-B97356F9ADDA}"/>
+					</PositioningInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{0B66E1D7-98DF-4247-8170-433B2A7C0B11}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{60A9366B-59FD-4AD7-B84D-255FB4C7E1F7}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{CEC1D348-67BC-4EED-B595-E8405BA14E0D}" ShortID="385868726">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{71C0D5AE-C080-4151-8311-7CD92FF20211}" ShortID="218807324">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="MuscicCue1" ID="{F9EF39A6-33F5-4122-81D6-F1C0A319E250}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>
